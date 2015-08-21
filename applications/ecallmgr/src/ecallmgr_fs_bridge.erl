@@ -175,6 +175,11 @@ pre_exec(DP, _Node, _UUID, _JObj) ->
                                     ,"="
                                     ,"${", ?CHANNEL_VAR_PREFIX, "Inception}"
                                    ])}
+     ,{"application", lists:concat(["export "
+                                    ,?CHANNEL_VAR_PREFIX, ?CALL_GROUP_ID
+                                    ,"="
+                                    ,"${", ?CHANNEL_VAR_PREFIX, ?CALL_GROUP_ID, "}"
+                                   ])}
      |DP
     ].
 
